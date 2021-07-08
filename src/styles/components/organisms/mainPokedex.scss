@@ -1,0 +1,32 @@
+.o-main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70%;
+  display: flex;
+
+  @include from($xx-large) {
+    padding: 0 .5rem;
+    height: auto;
+	}
+}
+
+.o-main__container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  height: 100%;
+  width: 70%;
+  max-width: $x-large;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 2rem 0;
+
+  @include from($xx-large) {
+		grid-template-columns: 1fr;
+    gap: 0;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    height: min-content;
+	}
+  
+}

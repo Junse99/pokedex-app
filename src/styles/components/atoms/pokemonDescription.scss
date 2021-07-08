@@ -1,0 +1,34 @@
+.a-description-pokemon__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 .5rem 0;
+    font-size: size(40);
+  
+    @include from($xx-large) {
+      font-size: size(25);
+      text-align: left;
+    }
+  }
+
+  p {
+    font-size: size(35);
+    margin: 0;
+  
+    @include from($xx-large) {
+      font-size: size(20);
+      text-align: right;
+    }
+  }
+
+  @include from($xx-large) {
+		flex-direction: row;
+    justify-content: space-between;
+	}
+}

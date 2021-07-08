@@ -1,0 +1,38 @@
+ /* Breakpoints */
+ $small: 440px; /*-------- Mobile devices*/
+ $s-medium: 570px; /*-------- Tablet devices*/
+ $medium: 768px;
+ $large: 960px; 
+ $x-large: 1060px; /*-------- Desktop devices*/
+ $xx-large: 1250px;
+ $xxx-large: 1440px;
+ $high-quality: 1700px;
+
+ /* Pixels to rem */
+$base-size: 18;
+@function size($target, $context: $base-size) {
+	@return ($target / $context) * 1rem;
+}
+
+ /* Colors - Static*/
+ $header: #096564;
+ $white: #FFFFFF;
+ $coconut: #f9f9f9;
+ $silver: #d5d5d5;
+ $faded-gray: #A0A0A0;
+ $dove-gray: #6C6F84;
+ $dark-gray: #292929;
+ $background: #F5F5F5;
+
+  /* Fonts */
+  $heebo-extrabold: "Heebo-ExtraBold";
+  $heebo-bold: "Heebo-Bold";
+  $heebo-medium: "Heebo-Medium";
+  $heebo-regular: "Heebo-Regular";
+  $heebo-light: "Heebo-Light";
+  $roboto-bold: "Roboto-Bold";
+  $roboto-medium: "Roboto-Medium";
+  $roboto-regular: "Roboto-Regular";
+  $nunito: "Nunito";
+  $nunito-bold: "Nunito-Bold";
+  $nunito-regular: "Nunito-Regular";

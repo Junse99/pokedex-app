@@ -1,0 +1,39 @@
+.o-header {
+  position: relative;
+  z-index: 1;
+  background-color: rgba($color: $header, $alpha: 1);
+  height: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include from($xx-large) {
+		justify-content: center;
+    height: 80px;
+	}
+}
+
+.o-header__pokebola{
+  height: 80%;
+  margin-left: 1rem;
+  transition: rotate 5s ease;
+  animation: 2s alternate run;
+
+  @include from($xx-large) {
+		margin: 0;
+	}
+}
+
+@keyframes run {
+  0% {
+    transform: translate(-50vw) rotate(-360deg);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+.o-header__image {
+  height: 80%;
+}

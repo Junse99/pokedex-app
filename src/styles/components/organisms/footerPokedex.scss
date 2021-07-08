@@ -1,0 +1,42 @@
+.o-footer {
+  height: 22%;
+  width: 100%;
+  color: $white;
+  position: relative;
+  z-index: 1;
+
+  @include from($xx-large) {
+    height: auto;
+	}
+/*   background-color: rgba($color: rgb(236, 236, 236), $alpha: 1); */
+}
+
+.o-footer__container {
+  box-sizing: border-box;
+  max-width: $x-large;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+
+  h2 {
+    margin-right: 2rem;
+    font-size: size(40);
+    text-shadow: 5px 5px 5px black;
+    color: $white;
+  
+    @include from($xx-large) {
+      font-size: size(35);
+      margin-right: 0;
+    }
+  }
+
+  @include from($xx-large) {
+		flex-direction: column;
+    width: 90%;
+    
+	}
+}

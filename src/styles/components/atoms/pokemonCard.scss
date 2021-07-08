@@ -1,0 +1,42 @@
+.a-card-pokemon {
+  display: flex;
+  width: 20%;
+  max-width: 200px;
+  height: 100%;
+  position: relative;
+  border-radius: 6px;
+  background-color: rgba($color: #FFF, $alpha: 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba($color: #000, $alpha: 0.2);
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 6px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba($color: #FFF, $alpha: 0.1) 0%, rgba($color: #FFF, $alpha: 0.1) 2%);
+  }
+
+  &:hover .a-card-pokemon__image {
+    transform: scale(1.1);
+  }
+
+  @include from($xx-large) {
+    width: 35%;
+    height: 40%;
+    margin-bottom: 1rem;
+	}
+}
+
+.a-card-pokemon__image {
+  max-width: 90%;
+  max-height: 90%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  margin: auto;
+  transition: transform .5s ease;
+}

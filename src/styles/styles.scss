@@ -1,0 +1,18 @@
+@import '../index';
+
+@import './base/normalize';
+@import './base/variables';
+@import './base/mixins';
+@import './base/theme';
+
+@import './pages/pokedex';
+@import './components/organisms/headerPokedex';
+@import './components/organisms/mainPokedex';
+@import './components/organisms/footerPokedex';
+@import './components/molecules/pokemonImage';
+@import './components/molecules/pokemonInfo';
+@import './components/molecules/pokemonList';
+@import './components/atoms/pokemonDescription';
+@import './components/atoms/pokemonTitle';
+@import './components/atoms/pokemonCard';
+

@@ -1,0 +1,22 @@
+.m-image-pokemon__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  @include from($xx-large) {
+		height: 30vh;
+	}
+}
+
+.m-image-pokemon__img {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  margin: auto;
+  height: 90%;
+  max-height: 50vh;
+
+  @include from($xx-large) {
+    z-index: 1;
+    height: 80%;
+	}
+}
