@@ -12,13 +12,13 @@
     font-size: size(40);
   
     @include from($xx-large) {
-      font-size: size(25);
+      font-size: size(20);
       text-align: left;
     }
   }
 
   p {
-    font-size: size(35);
+    font-size: size(30);
     margin: 0;
   
     @include from($xx-large) {

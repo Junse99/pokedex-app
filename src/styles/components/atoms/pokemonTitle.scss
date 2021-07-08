@@ -1,7 +1,8 @@
 @import '../../../styles/base/variables.scss';
 .a-image-pokemon__container {
-  height: 10%;
+
   width: 100%;
+  box-sizing: border-box;
   margin: 0 1rem;
   border-radius: 6px;
   text-align: center;
@@ -12,6 +13,7 @@
   backdrop-filter: blur(5px);
   box-shadow: 0 25px 45px rgba($color: #000, $alpha: 0.2);
   color: $white;
+  padding: .5rem;
 
   &::after {
     position: absolute;
@@ -24,20 +26,10 @@
     pointer-events: none;
     background: linear-gradient(to bottom, rgba($color: #FFF, $alpha: 0.1) 0%, rgba($color: #FFF, $alpha: 0.1) 2%);
   }
-
-  @include from($xx-large) {
-    font-size: size(30);
-    height: 20%;
-	}
 }
 
 .a-image-pokemon__container--title {
   margin: auto;
   font-size: size(40);
   text-shadow: 5px 5px 5px black;
-  
-  @include from($xx-large) {
-    font-size: size(30);
-	}
-  
 }
