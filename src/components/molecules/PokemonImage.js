@@ -1,6 +1,5 @@
 import React from 'react'
 import { PokemonTitle } from '../atoms/PokemonTitle'
-import imagen2 from '../../assets/pokedex.png'
 
 export const PokemonImage = ({ name='Default', image, icon }) => {
 

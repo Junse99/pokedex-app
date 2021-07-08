@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { pokemons } from '../../assets/pokemon'
+import { PokemonContext } from '../../services/pokemonContext'
 import { PokemonImage } from '../molecules/PokemonImage'
 import { PokemonInfo } from '../molecules/PokemonInfo'
 
 export const MainPokedex = () => {
 
-  const pokemon = pokemons[3]
+  const { pokemon:active } = useContext( PokemonContext )
+  
+  const pokemon = pokemons[ active.active ]
+
 
   return (
     <main className='o-main'>

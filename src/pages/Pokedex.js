@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FooterPokedex } from '../components/organisms/FooterPokedex'
 import { HeaderPokedex } from '../components/organisms/HeaderPokedex'
 import { MainPokedex } from '../components/organisms/MainPokedex'
+import { PokemonContext } from '../services/pokemonContext'
 
 const Pokedex = () => {
-  return (
-    <div className='p-container'>
 
+  const [ pokemon, setPokemon ] = useState({ active: 0 })
+
+  return (
+    <PokemonContext.Provider value={{
+      pokemon, setPokemon
+    }}>
+      <div className='p-container'>
         <HeaderPokedex />
         <MainPokedex />
         <FooterPokedex />
- 
-    </div>
+      </div>
+    </PokemonContext.Provider>
   )
 }
 

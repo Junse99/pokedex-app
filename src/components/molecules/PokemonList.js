@@ -6,7 +6,7 @@ export const PokemonList = () => {
   return (
     <div className='m-list-pokemon'>
       {
-        pokemons.map(pokemon => <PokemonCard key={pokemon.number} image={ pokemon.image } name={ pokemon.name }/>)
+        pokemons.map((pokemon, index) => <PokemonCard key={pokemon.number} image={ pokemon.image } name={ pokemon.name } position={ index }/>)
       }
     </div>
   )
